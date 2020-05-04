@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Book Review</title>
+    </head>
+    <body>
+        <h4>{{username}}!! Welcome to Book review</h4>
+        <form action="{{url_for('log_in')}}" method="POST">
+        <input type="text" name = "username" placeholder="username">
+        <input type="password" name = "password" placeholder="password">
+    
+        <div>
+        
+            <button name ="sign_in_btn" type="submit">sign in </button>
+        </form>
+        <form action="{{('register')}}">
+                <button name = "sign_up_btn" type="submit">sign up</button>
+        </form>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Book Review</title>
+    </head>
+    <body>
+        <h4>Welcome to Book review</h4>
+        <form action="{{ url_for('save') }}" method="post">
+            <input type="text" name="username"  placeholder="username">
+            <input type="password" name="password"  placeholder="password">
+            <div>
+                <button type="submit">Register</button>
+             </div>
+        </form>
+    </body>
+</html>
